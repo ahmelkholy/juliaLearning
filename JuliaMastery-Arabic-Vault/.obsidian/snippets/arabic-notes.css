@@ -1,0 +1,42 @@
+/*
+ * Right-to-left reading for notes tagged with cssclasses: [rtl-note].
+ * Code, file paths, formulas, and properties remain left-to-right.
+ */
+.rtl-note {
+  direction: rtl;
+  text-align: right;
+  line-height: 1.9;
+}
+
+.rtl-note h1,
+.rtl-note h2,
+.rtl-note h3,
+.rtl-note h4,
+.rtl-note p,
+.rtl-note li,
+.rtl-note blockquote,
+.rtl-note table {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl-note pre,
+.rtl-note code,
+.rtl-note .HyperMD-codeblock,
+.rtl-note .cm-inline-code,
+.rtl-note .math,
+.rtl-note .metadata-container {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+}
+
+.rtl-note pre {
+  border-inline-start: 4px solid var(--interactive-accent);
+  border-radius: 8px;
+}
+
+.rtl-note .callout {
+  border-radius: 10px;
+}
+

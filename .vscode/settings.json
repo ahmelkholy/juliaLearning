@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.idea.md": "markdown"
+  },
+  "foam.files.include": [
+    "JuliaMastery-Arabic-Vault/**/*.idea.md"
+  ],
+  "foam.files.defaultNoteExtension": "md",
+  "foam.templates.folder": "JuliaMastery-Arabic-Vault/templates",
+  "foam.completion.label": "title",
+  "foam.completion.useAlias": "whenPathDiffersFromTitle",
+  "foam.links.sync.enable": true
+}

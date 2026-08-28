@@ -1,0 +1,10 @@
+.julia_mastery_progress.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+coverage/
+.DS_Store
+JuliaMastery-Arabic-Vault/.obsidian/workspace.json
+JuliaMastery-Arabic-Vault/.obsidian/workspace-mobile.json
+JuliaMastery-Arabic-Vault/.obsidian/cache
+JuliaMastery-Arabic-Vault/.trash/

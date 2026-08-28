@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "m00",
+      "type": "file",
+      "file": "maps/M00-julia-mastery-map.idea.md",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 280,
+      "color": "4"
+    },
+    {
+      "id": "m01",
+      "type": "file",
+      "file": "maps/M01-types-and-dispatch.idea.md",
+      "x": -900,
+      "y": -520,
+      "width": 360,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "m02",
+      "type": "file",
+      "file": "maps/M02-arrays-and-memory.idea.md",
+      "x": -450,
+      "y": -520,
+      "width": 360,
+      "height": 240,
+      "color": "2"
+    },
+    {
+      "id": "m03",
+      "type": "file",
+      "file": "maps/M03-performance-and-compiler.idea.md",
+      "x": 0,
+      "y": -520,
+      "width": 360,
+      "height": 240,
+      "color": "3"
+    },
+    {
+      "id": "m04",
+      "type": "file",
+      "file": "maps/M04-interfaces-and-metaprogramming.idea.md",
+      "x": 450,
+      "y": -520,
+      "width": 360,
+      "height": 240,
+      "color": "5"
+    },
+    {
+      "id": "m05",
+      "type": "file",
+      "file": "maps/M05-concurrency-and-reproducibility.idea.md",
+      "x": 900,
+      "y": -520,
+      "width": 360,
+      "height": 240,
+      "color": "6"
+    },
+    {
+      "id": "m06",
+      "type": "file",
+      "file": "maps/M06-packages-errors-and-testing.idea.md",
+      "x": -600,
+      "y": 480,
+      "width": 380,
+      "height": 250,
+      "color": "1"
+    },
+    {
+      "id": "m07",
+      "type": "file",
+      "file": "maps/M07-scientific-algorithms.idea.md",
+      "x": 0,
+      "y": 480,
+      "width": 380,
+      "height": 250,
+      "color": "2"
+    },
+    {
+      "id": "m08",
+      "type": "file",
+      "file": "maps/M08-exercises-and-review.idea.md",
+      "x": 600,
+      "y": 480,
+      "width": 380,
+      "height": 250,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "fromNode": "m00",
+      "fromSide": "left",
+      "toNode": "m01",
+      "toSide": "bottom",
+      "label": "الأنواع"
+    },
+    {
+      "id": "e02",
+      "fromNode": "m00",
+      "fromSide": "top",
+      "toNode": "m02",
+      "toSide": "bottom",
+      "label": "الذاكرة"
+    },
+    {
+      "id": "e03",
+      "fromNode": "m00",
+      "fromSide": "top",
+      "toNode": "m03",
+      "toSide": "bottom",
+      "label": "الأداء"
+    },
+    {
+      "id": "e04",
+      "fromNode": "m00",
+      "fromSide": "top",
+      "toNode": "m04",
+      "toSide": "bottom",
+      "label": "التجريد"
+    },
+    {
+      "id": "e05",
+      "fromNode": "m00",
+      "fromSide": "right",
+      "toNode": "m05",
+      "toSide": "bottom",
+      "label": "التزامن"
+    },
+    {
+      "id": "e06",
+      "fromNode": "m00",
+      "fromSide": "bottom",
+      "toNode": "m06",
+      "toSide": "top",
+      "label": "البرامج"
+    },
+    {
+      "id": "e07",
+      "fromNode": "m00",
+      "fromSide": "bottom",
+      "toNode": "m07",
+      "toSide": "top",
+      "label": "العلوم"
+    },
+    {
+      "id": "e08",
+      "fromNode": "m00",
+      "fromSide": "bottom",
+      "toNode": "m08",
+      "toSide": "top",
+      "label": "التطبيق"
+    }
+  ]
+}
