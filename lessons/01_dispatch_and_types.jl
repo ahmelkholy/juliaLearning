@@ -19,6 +19,12 @@ end
 struct Rectangle{T<:Real} <: AbstractShape
     width::T
     height::T
+
+    function Rectangle(width::T, height::T) where {T<:Real}
+        width >= zero(T) || throw(ArgumentError("width must be nonnegative"))
+        height >= zero(T) || throw(ArgumentError("height must be nonnegative"))
+        new{T}(width, height)
+    end
 end
 
 area(shape::Circle) = π * shape.radius^2
@@ -37,7 +43,9 @@ struct Point{N,T<:Real}
     coordinates::NTuple{N,T}
 end
 
-Point(values::Vararg{T,N}) where {T<:Real,N} = Point{N,T}(values)
+function Point(values::Vararg{T,N}) where {T<:Real,N}
+    return Point{N,T}(values)
+end
 
 function Base.:+(left::Point{N,T}, right::Point{N,S}) where {N,T,S}
     R = promote_type(T, S)
