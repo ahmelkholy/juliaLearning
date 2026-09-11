@@ -5,6 +5,7 @@ using LinearAlgebra
 # Polynomial coefficients run from the constant term to the highest power.
 # Horner's method reduces multiplication, but the key idea is generic code: this
 # function works with Complex, BigFloat, or any scalar that supports the operations.
+
 function horner(coefficients, x)
     isempty(coefficients) && return zero(x)
     accumulator = last(coefficients) * one(x)
@@ -16,6 +17,7 @@ end
 
 # `eachindex` is safe for matching elements without assuming a particular index
 # layout. The dots fuse the expression and write into caller-owned memory.
+
 function affine!(destination, x, scale, offset)
     axes(destination) == axes(x) || throw(DimensionMismatch("axes must match"))
     @. destination = muladd(scale, x, offset)
